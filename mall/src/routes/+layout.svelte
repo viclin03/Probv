@@ -15,12 +15,14 @@
 
 <div class="appbar flex flex-row bg-surface-100-800-token p-3 mb-10 shadow-2xl">
 	
-	<a href="https://github.com/ContainerOFAids/Mall" class="btn-icon text-black hover:text-white"><i class="fa-brands fa-github fa-4x ml-5"></i></a>
+	
 	
 	<div class=" justify-center flex flex-row gap-10 w-full">
+		<a href="https://github.com/ContainerOFAids/Mall" class="btn-icon text-black hover:text-white left-0 absolute"><i class="fa-brands fa-github fa-4x ml-5"></i></a>
 		<a href="/" class="btn h2 font-bold hover:variant-soft-primary">Home</a>
 		<a href="/activities" class="btn h2 font-bold hover:variant-soft-primary">Activities</a>
 		<a href="/login" class="btn h2 font-bold hover:variant-soft-primary">Log In</a>
+		
 		
 		
 		{#if data.isAdmin}
@@ -36,8 +38,3 @@
 
 </div>
 <slot />
-
-<div class=" bg-surface-900 h-56 pt-10 pl-10 mt-10 absolute w-full">
-	<header>Epost:</header>
-	<h2 class="h3">Samgus02@edu.umea.se</h2>
-</div>
