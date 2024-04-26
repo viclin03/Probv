@@ -21,12 +21,14 @@
                 <p class="h3">{activity.description}</p>
                 <div class="flex items-center">
                     <form action="?/like" method="post" use:enhance>
+                        {#if data.existingUser?.isAdmin}
                         <input type="hidden" name="activityId" value="{activity.id}" class="input">
                         <button class="btn-icon hover:bg-white hover:text-black"><i class="fa-{activity.liked ? "solid" : "regular"} fa-heart"></i></button>
-                        {activity.likeCount + activity.adminlikes} Likes
+                        {/if}
+                        {activity.likeCount + activity.adminlikes} Admin/Admins have approved this
                         
                     </form>
-                    {#if data.existingUser?.isAdmin}
+                    <!--{#if data.existingUser?.isAdmin}
                         <form action="?/likeup" method="post">
                             <button class="btn text-green-500 hover:bg-white h-10 w-10"><i class="fa-solid fa-plus"></i></button>
                             <input type="hidden" value="{activity.id}" name="id">
@@ -40,7 +42,7 @@
                             <input type="hidden" value="{activity.id}" name="id">
                         </form>
                         
-                    {/if}
+                    {/if}-->
                 </div>
                 
                 
