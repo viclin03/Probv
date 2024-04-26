@@ -7,9 +7,9 @@
 				<img src="https://letsenhance.io/static/8f5e523ee6b2479e26ecc91b9c25261e/1015f/MainAfter.jpg" alt="" class="bg-black/50 w-full aspect-[21/9]">
 			</header>
 			<div class="p-4 space-y-4">
-				<h6 class="h6">Hello</h6>
-				<h3 class="h3">Hello</h3>
-				<article><p>hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello</p></article>
+				<h6 class="h6">Login för admin</h6>
+				<h3 class="h3">Admin Login</h3>
+				<article><p>username: namn password: password</p></article>
 			</div>
 		</div>
 		<div class="card card-hover w-2/5 p-5">
