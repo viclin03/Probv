@@ -12,8 +12,8 @@
 </script>
 
 <main class="flex flex-col items-center pb-10">
-    <h1 class="h1">Activities</h1>
-    <span class="h3">Just add some 😁</span>
+    <h1 class="h1">Välj vad du vill göra</h1>
+    <span class="h3">____________________________</span>
     <ul class="w-1/2">
         {#each activities as activity}
             <li class="bg-surface-100-800-token m-5 p-5">
@@ -47,5 +47,8 @@
             </li>
         {/each}
     </ul>
-    <a href="/activities/suggest" class="btn variant-filled-primary">lägg till en tjänst</a>
+    <br>
+    <a href="/activities/distans" class="btn variant-filled-primary">Distansstyling</a>
+    <br>
+    <a href="/activities/hem" class="btn variant-filled-primary">Hemstyling</a>
 </main>

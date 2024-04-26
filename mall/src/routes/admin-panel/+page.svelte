@@ -26,8 +26,10 @@
                             <div class="">
                                 <h2 class="h2">{activity.name}</h2>
                                 <h3 class="h3">{activity.description}</h3>
+                                <h4 class="h4">{activity.tid}</h4>
                                 <header>Time</header>
                                 <h3 class="w-36 overflow-hidden h-6">{activity.createdAt}</h3>
+                                
                                 
                                 <div class="flex justify-center gap-4">
                                     <form action="?/approve" method="post" use:enhance>
@@ -42,6 +44,7 @@
                                 
                                 
                             </div>
+                            
                             
                         {/each}
                     </ul>

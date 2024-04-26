@@ -44,6 +44,7 @@ model activity {
   createdAt   DateTime @default(now())
   name        String
   description String
+  tid DateTime
 
   suggestedBy   User   @relation(fields: [suggestedById], references: [id])
   suggestedById String
@@ -56,6 +57,7 @@ model activity {
   comments comment[]
   canapply Boolean
   adminlikes Int
+
 }
 
 model activityLog {
@@ -64,7 +66,7 @@ model activityLog {
   user       User     @relation(fields: [userId], references: [id])
   userId     String
   activity   activity @relation(fields: [activityId], references: [id])
-  activityId String
+  activityId String  
 }
 
 model comment {
